@@ -14,8 +14,23 @@ public class BlueRobot {
 	// Definir a área limite que o BlueRobot pode se movimentar.
 	private IUniversalPositioningSystem iUPS;
 
+	/**
+	 * Construir um BlueRobot no posicionamento padrão.  
+	 */
 	public BlueRobot(IUniversalPositioningSystem iUPS) {
 		this.currentPosition = new BlueRobotCurrentPosition();
 		this.iUPS = iUPS;
+		// TODO Constructor1 BlueRobot;
+	}
+
+	/**
+	 * Construir um BlueRobot informando o posicionamento e orientação.  
+	 */
+	public BlueRobot(int x, int y, BlueRobotOrientationEnum orientation) {
+		// TODO Constructor2 BlueRobot;
+	}
+	
+	public BlueRobotCurrentPosition getCurrentPosition() {
+		return currentPosition;
 	}
 }
